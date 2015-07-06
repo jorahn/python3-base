@@ -1,4 +1,4 @@
-# Dockerfile for image `rcsa/python3-hdf5`
+# Dockerfile for image `rcsa/python3-base`
 
 ## Ingredients:
 
@@ -7,20 +7,20 @@
 - PyTables (requires HDF5 installed)
 - NumPy (compiling takes some time)
 - Pandas (requires pytables for hdf5-files and compiling takes some time)
+- SciPy, Scikit-Learn (quite cumbersome to install from source)
 
 All taken care of...
 
 ## Build on top of this image with a Dockerfile like this:
 
-    FROM rcsa/python3-hfd5:latest
+    FROM rcsa/python3-base:latest
     ENV PYTHONUNBUFFERED 1
     RUN mkdir /code
     WORKDIR /code
     ADD requirements.txt /code/
     RUN pip install -r requirements.txt
     ADD . /code/
-    EXPOSE 5000
-    CMD ["python", "app.py"]
+    CMD ["python", "run.py"]
 
 ## and app.py like this (see [here](http://pandas.pydata.org/pandas-docs/stable/io.html#io-hdf5)):
 
