@@ -2,7 +2,7 @@ FROM python:3.4
 
 ENV HOME /root
 
-RUN apt-get update && apt-get -yq install gcc build-essential gfortran g++ zlib1g-dev libatlas-base-dev wget
+RUN apt-get update && apt-get -yq install gcc build-essential gfortran g++ zlib1g-dev libatlas-base-dev wget libxml2-dev libxslt1-dev
 
 # Build HDF5
 RUN cd ; wget https://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.15-patch1.tar.gz
