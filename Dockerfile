@@ -23,3 +23,4 @@ RUN pip install tables
 RUN pip install scipy
 RUN pip install scikit-learn
 RUN pip install "ipython[notebook]"
+RUN STATIC_DEPS=true pip install lxml
