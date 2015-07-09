@@ -8,6 +8,7 @@
 - NumPy (compiling takes some time)
 - Pandas (requires pytables for hdf5-files and compiling takes some time)
 - SciPy, Scikit-Learn (quite cumbersome to install from source)
+- lxml with C-dependencies (compiling takes some time, needs a trick to install from source)
 
 All taken care of...
 
