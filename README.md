@@ -31,4 +31,3 @@ All taken care of...
     #load dataframe
     with pd.HDFStore('file.h5') as store:
         df = store['key']
-    
