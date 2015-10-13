@@ -1,4 +1,4 @@
-FROM python:3.4
+FROM python:3.5
 
 ENV HOME /root
 
@@ -20,6 +20,7 @@ RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 RUN pip install numpy
 RUN pip install pandas
 RUN pip install bottleneck
+RUN pip install numexpr
 RUN pip install tables
 RUN pip install scipy
 RUN pip install scikit-learn
