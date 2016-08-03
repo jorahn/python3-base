@@ -5,9 +5,9 @@ ENV HOME /root
 RUN apt-get update && apt-get -yq install gcc build-essential gfortran g++ zlib1g-dev libatlas-base-dev wget
 
 # Build HDF5
-RUN cd ; wget https://www.hdfgroup.org/ftp/HDF5/prev-releases/hdf5-1.8.16/src/hdf5-1.8.16.tar.gz
-RUN cd ; tar zxf hdf5-1.8.16.tar.gz
-RUN cd ; mv hdf5-1.8.16 hdf5-setup
+RUN cd ; wget https://www.hdfgroup.org/ftp/HDF5/prev-releases/hdf5-1.8.17/src/hdf5-1.8.17.tar.gz
+RUN cd ; tar zxf hdf5-1.8.17.tar.gz
+RUN cd ; mv hdf5-1.8.17 hdf5-setup
 RUN cd ; cd hdf5-setup ; ./configure --prefix=/usr/local/
 RUN cd ; cd hdf5-setup ; make && make install
 
