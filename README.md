@@ -2,7 +2,7 @@
 
 ## Ingredients:
 
-- Python 3.4 (linked to update with official image)
+- Python 3.5 (linked to update with official image)
 - HDF5 (quite cumbersome to install from source)
 - PyTables (requires HDF5 installed)
 - NumPy (compiling takes some time)
